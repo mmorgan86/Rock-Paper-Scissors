@@ -14,7 +14,7 @@ computer_score = 0
 
 puts "Welecome to Rock Paper Scissors"
 
-until user_choice >= 5 || computer_choice >= 5
+until user_score >= 5 || computer_score >= 5
   puts "What do you throw? (Rock, Paper or Scissors)"
   user_choice = gets.chomp.downcase
 
@@ -33,5 +33,6 @@ until user_choice >= 5 || computer_choice >= 5
     puts "COMPUTER WINS #{computer_choice} beats #{user_choice}"
     computer_score += 1
   end
+    puts "Game Over!!!"
     puts "Your Score: #{user_score}, Computer Score: #{computer_score}"
 end
